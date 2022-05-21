@@ -20,7 +20,7 @@ public interface CustomerService {
 	//get by id
 	Optional<Customer> getCustomerById(long CustomerID);
 	
-	/*// delete
-	Optional<Customer> deleteByCustomerId(long CustomerID);
-	*/
+	// delete 
+	void deleteByCustomerId(long CustomerID);
+	
 }

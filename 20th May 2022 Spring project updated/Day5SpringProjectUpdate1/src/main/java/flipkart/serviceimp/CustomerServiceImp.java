@@ -34,14 +34,14 @@ public class CustomerServiceImp implements CustomerService {
 		Optional<Customer> customerget = localRepositary.findById(CustomerID);
 		return customerget;
 	}
-	
-	/*
-	public Optional<Customer> deleteByCustomerId(long CustomerID) {
+
+	public void deleteByCustomerId(long CustomerID) {
 		// TODO Auto-generated method stub
-		Optional<Customer> customerdelet = localRepositary.delete(CustomerID);
-		return null;
+		localRepositary.deleteById(CustomerID);
+		
 	}
-	*/
+	
+	
 
 	/*
 	public Customer updateProduct(Customer customer, long CustomerID) {
