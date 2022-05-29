@@ -27,4 +27,9 @@ public class MyOrderService implements OrderService {
 		return listoforders;
 	}
 
+	@Override
+	public void deleteByOrderId(long id) {
+		myRepo.deleteById(id);
+	}
+	
 }

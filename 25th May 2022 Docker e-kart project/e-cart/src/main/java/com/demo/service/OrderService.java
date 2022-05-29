@@ -8,10 +8,12 @@ import com.demo.bean.Order;
 public interface OrderService {
 	
 	///mention user defined service
-	
 	Order createOder(Order order);
 	
 	//list of orders
 	List<Order> getAllListOfOrder();
+	
+	//delete of orders
+	void deleteByOrderId(long id);
 
 }
