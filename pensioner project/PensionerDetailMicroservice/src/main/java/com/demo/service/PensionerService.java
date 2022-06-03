@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.demo.bean.Pensioner;
 
-@Service
 public interface PensionerService {
 	
 	//GET PensionerDetailss servcie
