@@ -1,5 +1,6 @@
 package com.demo.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
@@ -12,9 +13,9 @@ public interface PensionerService {
 	//GET PensionerDetailss servcie
 	Optional<Pensioner> getPensionerDetailsByAaddhar(long aadharcardid);
 
-	
 	/*
-	 * //post Integer pensionCalculator(double basicsalary,double
-	 * dearnessallowance,int workedageinorganization);
-	 */
+	Integer pensionCalculator(double basicsalary,double dearnessallowance,int workedageinorganization);
+    List<Pensioner> getAllListOfPensioners();
+	*/
+
 }

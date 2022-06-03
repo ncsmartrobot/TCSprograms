@@ -12,7 +12,8 @@ import com.demo.service.PensionerService;
 @RestController
 public class PensionerController {
 
-	@Autowired PensionerService pensionerservice;
+	@Autowired 
+	PensionerService pensionerservice;
 	
 	@GetMapping(value = "/PensionerDetailsByAaddhar")
 	Optional<Pensioner> getPensionerDetailsByAaddhar(long aadharcardid){
