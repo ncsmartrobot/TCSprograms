@@ -9,6 +9,9 @@ import com.demo.bean.Pensioner;
 
 public interface PensionerService {
 	
+	//creating a pensioner details
+	Pensioner pensionerdetails(Pensioner pensioner);
+	
 	//GET PensionerDetailss servcie
 	Optional<Pensioner> getPensionerDetailsByAaddhar(long aadharcardid);
 
