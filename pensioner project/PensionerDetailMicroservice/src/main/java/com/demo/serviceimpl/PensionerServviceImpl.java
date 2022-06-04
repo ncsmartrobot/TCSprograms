@@ -22,8 +22,8 @@ public class PensionerServviceImpl implements PensionerService{
 	}
 	
 	//get by aadharcardid
-	public Optional<Pensioner> getPensionerDetailsByAaddhar(long aadharcardid) {
-		Optional<Pensioner> pensionerget = pensionserRepo.findById(aadharcardid);
+	public Optional<Pensioner> getPensionerDetailsByAaddhar(long aadhaarnumber) {
+		Optional<Pensioner> pensionerget = pensionserRepo.findById(aadhaarnumber);
 		return pensionerget;
 	}
 

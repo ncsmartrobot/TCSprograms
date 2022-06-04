@@ -1,0 +1,30 @@
+step by step process
+
+Step1: docker run --name mysql-project -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=orders -e MYSQL_USER=user -e MYSQL_PASSWORD=password -d -p 3301:3306 mysql:latest
+Step2: docker container ls
+step3: docker exec -it mysql-project bash
+Step4: docker run -t --link mysql-project:mysql -p 8666:7075 dockerimage
+
+
+
+docker run -t --link mysql-penseionerbyid:mysql -p 8666:7075 pensionerdocker
+
+docker run --name mysql-penseionerbyid -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=pensioners -e MYSQL_USER=user -e MYSQL_PASSWORD=password -d -p 3303:3306 mysql:latest
+
+docker run -t --link mysql-penseionerbyid:mysql -p 8666:7075 imagepensioner3
+
+docker exec -it mysql-penseionerbyid bash
+
+	"name" : "boomi",
+	"dob" : "29/02/2000",
+	"salaryearned" : "23000",
+	"da_allowance" : "5000",
+	"typeselforfamilypension" : "abcd",
+	"aadhaarnumber" : "1234 1234 1234",
+	"pensionamount" : "100000",
+	"basicsalary" : "20000",
+	"fixedageByGovt" : "22",
+	"pensioneraccountnumber" : "987654321",
+	"pancard" : "PAN123",
+	"username" : "mika123",
+	"password" : "company"
